@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class calc
+{
+    public static void main(String[] args){
+        Scanner io = new Scanner(System.in);
+        System.out.print("Number 1: ");
+        double num1 = io.nextDouble();
+
+        System.out.println("Please choose any operation to perform. e.g. : +, -, *, /, ^.");
+        char o = io.next().charAt(0);
+        System.out.println("operator: "+o);
+
+        System.out.print("Number 2: ");
+        double num2 = io.nextDouble();
+
+        System.out.print("Result: "+num1+o+num2+"= ");
+        if (o=='+'){
+            System.out.println(num1+num2);
+        } else if (o=='-') {
+            System.out.println(num1-num2);
+        } else if (o=='*') {
+            System.out.println(num1*num2);
+        } else if (o=='/') {
+            System.out.println(num1/num2);
+        }
+
+
+        System.out.println();
+    }
+}
