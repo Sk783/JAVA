@@ -1,7 +1,7 @@
 public class palindrome {
     public static void main(String[] args){
         int num = 18481;
-        int temp = num;
+        int temp = num;   //copied number in temp var
         int revNum = 0;
         while (num>0){
             int lastDigit = num%10;
@@ -9,7 +9,8 @@ public class palindrome {
             revNum = (revNum*10)+lastDigit;
         }
         System.out.println(revNum);
-        if (temp==revNum){
+        //check if palindrome of not
+        if (temp==revNum){    
             System.out.println("Palindrome");
         }
         else{
