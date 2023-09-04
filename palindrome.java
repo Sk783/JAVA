@@ -9,7 +9,7 @@ public class palindrome {
             revNum = (revNum*10)+lastDigit;
         }
         System.out.println(revNum);
-        //check if palindrome of not
+        //check if palindrome or not
         if (temp==revNum){    
             System.out.println("Palindrome");
         }
