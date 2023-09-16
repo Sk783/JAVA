@@ -1,3 +1,5 @@
+//reverse the original string word by word
+
 public class POTD1 {
     public static String reverseWords(String str){
         String[] words = str.split(" ");
